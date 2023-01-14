@@ -1,12 +1,10 @@
 import styled, { css, DefaultTheme } from "styled-components";
 import { IPalette } from "../styled";
-
 export type ButtonProps = {
   active?: boolean; // making this props optional
   variant: "contained" | "outlined";
   color: keyof Omit<DefaultTheme["palette"], "common">;
 };
-
 export const Button = styled.button<ButtonProps>`
   /* common properties for button  */
   border-radius: ${(props) => props.theme.borderRadius};

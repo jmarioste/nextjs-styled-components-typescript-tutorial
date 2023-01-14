@@ -10,12 +10,12 @@ export const darkTheme: DefaultTheme = {
       white: "#ffffff",
     },
     primary: {
-      main: "#3b82f6",
-      contrastText: "#ffffff",
+      main: "#739fe6",
+      contrastText: "#2c2c2c",
     },
     secondary: {
-      main: "#d946ef",
-      contrastText: "#ffffff",
+      main: "#d899e2",
+      contrastText: "#2c2c2c",
     },
   },
 };

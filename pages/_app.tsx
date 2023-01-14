@@ -3,12 +3,10 @@ import { ThemeProvider } from "styled-components";
 import { useLocalStorage } from "usehooks-ts";
 import { defaultTheme } from "../components/themes/defaultTheme";
 import { GlobalStyle } from "../components/themes/globalStyle";
-
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme] = useLocalStorage("theme", defaultTheme);
-  console.log("theme", theme);
   return (
-    <ThemeProvider theme={theme ?? defaultTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Component {...pageProps} />
     </ThemeProvider>
